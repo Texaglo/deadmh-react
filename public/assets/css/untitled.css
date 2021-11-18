@@ -1,0 +1,57 @@
+.cover2 {
+  max-width: 33%;
+  position: absolute;
+  top: 100%;
+  left: 33%;
+}
+
+.cover {
+  max-width: 33%;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+
+.cover3 {
+  max-width: 33%;
+  position: absolute;
+  top: 100%;
+  left: 66%;
+}
+
+.button2 {
+  max-width: 100%;
+  position: absolute;
+  top: 81%;
+  left: 50%;
+}
+
+.full {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.card-height {
+  max-height: 74px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cover_c {
+  max-width: 33%;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  max-height: 100%;
+}
+
+#carousel-1 {
+  max-width: 33%;
+  position: absolute;
+  top: 100%;
+  left: 33%;
+  max-height: 100%;
+}
+
