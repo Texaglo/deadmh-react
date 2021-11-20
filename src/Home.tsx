@@ -93,7 +93,9 @@ const Home = (props: HomeProps) => {
           wallet.publicKey,
           props.treasury
         );
+// from stack overflow //
 
+//from stack overflow//
         const status = await awaitTransactionSignatureConfirmation(
           mintTxId,
           props.txTimeout,
@@ -167,22 +169,21 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-      <div className="mint-container">
+      <div>
       {wallet && (
         <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
 
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
-
-      {wallet && <p>Total Available: {itemsAvailable}</p>}
-
+     
       {wallet && <p>Redeemed: {itemsRedeemed}</p>}
 
       {wallet && <p>Remaining: {itemsRemaining}</p>}
 
       <MintContainer>
         {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
+          <ConnectButton style={{
+            background: '#e9abff'
+          }}>Connect Wallet</ConnectButton>
         ) : (
           <MintButton
             disabled={isSoldOut || isMinting || !isActive}
